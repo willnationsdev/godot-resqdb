@@ -1,0 +1,44 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "FileSearch",
+"language": "GDScript",
+"path": "res://file_search.gd"
+}, {
+"base": "Reference",
+"class": "IndexProvider",
+"language": "GDScript",
+"path": "res://addons/godot-resqdb/database/index_provider.gd"
+}, {
+"base": "Reference",
+"class": "ResQ",
+"language": "GDScript",
+"path": "res://addons/godot-resqdb/database/resq.gd"
+} ]
+_global_script_class_icons={
+"FileSearch": "",
+"IndexProvider": "",
+"ResQ": ""
+}
+
+[application]
+
+config/name="demo"
+config/icon="res://icon.png"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
